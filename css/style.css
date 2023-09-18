@@ -286,6 +286,14 @@ header .container .mainmenu .btn-login {
   }
 }
 
+.logos .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 95px;
+  padding-bottom: 100px;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
