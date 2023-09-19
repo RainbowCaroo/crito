@@ -97,6 +97,16 @@ html, body {
   font-size: 45px;
 }
 
+.icon-info h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22;
+  font-weight: 700;
+}
+.icon-info img {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
 .center-content {
   display: flex;
   justify-content: center;
@@ -250,7 +260,6 @@ header .container .mainmenu .btn-login {
 }
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
-  font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 40px;
 }
@@ -316,6 +325,51 @@ header .container .mainmenu .btn-login {
   }
 }
 
+.features .container {
+  display: grid;
+  border: 2px solid #DAD9D3;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "title title" "b-advice startup " "finance risk";
+  gap: 50px;
+  padding: 50px;
+}
+@media (min-width: 996px) {
+  .features .container {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: "title b-advice startup" "title finance risk";
+    gap: 70px;
+    padding: 85px;
+  }
+}
+.features .container .section-title {
+  grid-area: title;
+  padding: 30px;
+}
+.features .container .section-title .btn-yellow {
+  margin-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media (min-width: 996px) {
+  .features .container .section-title .btn-yellow {
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+.features .container .icon-info .business-advice {
+  grid-area: b-advice;
+}
+.features .container .icon-info .startup-business {
+  grid-area: startup;
+}
+.features .container .icon-info .financial-advice {
+  grid-area: finance;
+}
+.features .container .icon-info .risk-management {
+  grid-area: risk;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }
@@ -341,7 +395,6 @@ header .container .mainmenu .btn-login {
   height: auto;
 }
 .project-and-case .container .project-and-cases .project h3 {
-  font-family: "DM Sans", sans-serif;
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
   font-size: 22px;
