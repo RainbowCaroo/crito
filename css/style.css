@@ -96,6 +96,34 @@ html, body {
   font-size: 45px;
 }
 
+.title-and-btn {
+  display: block;
+  margin-bottom: 40px;
+  padding-top: 40px;
+}
+@media (min-width: 998px) {
+  .title-and-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.title-and-btn .section-title {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.title-and-btn .section-title h2 {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+@media (min-width: 998px) {
+  .title-and-btn .section-title h2 {
+    padding-top: 25px;
+    padding-bottom: 0px;
+  }
+}
+
 .icon-info h3 {
   font-family: "DM Sans", sans-serif;
   font-size: 22;
@@ -664,6 +692,46 @@ header .container .mainmenu .btn-login {
   text-decoration: underline;
 }
 .project-and-case .container .center-content {
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.article-news .container .article-and-news {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .article-news .container .article-and-news {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 998px) {
+  .article-news .container .article-and-news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.article-news .container .article-and-news .article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
+}
+.article-news .container .article-and-news .article img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+}
+.article-news .container .article-and-news .article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-right: 130px;
+}
+.article-news .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
 }
