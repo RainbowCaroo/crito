@@ -970,6 +970,7 @@ header .container .mainmenu .btn-login {
   padding: 80px;
   padding-left: 120px;
   padding-right: 120px;
+  margin-bottom: 100px;
 }
 .leave-message .container h1 {
   text-align: center;
@@ -1004,7 +1005,17 @@ header .container .mainmenu .btn-login {
 }
 .leave-message .container .btn-yellow {
   margin: 30px 0;
-  cursor: pointer;
+}
+
+.map .small-map {
+  justify-content: center;
+  align-self: center;
+}
+.map .big-map {
+  display: none;
+}
+.map img {
+  width: auto;
 }
 
 .footer-info {
