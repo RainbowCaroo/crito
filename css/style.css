@@ -964,6 +964,49 @@ header .container .mainmenu .btn-login {
   }
 }
 
+.leave-message .container {
+  display: flex;
+  background-color: #F0EFE9;
+  padding: 80px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.leave-message .container h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 45px;
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .leave-message .container h1 {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .leave-message .container h1 {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+.leave-message .container .form-input {
+  display: block;
+  border: none;
+  border-radius: 30px;
+  padding: 20px;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.leave-message .container textarea {
+  resize: none;
+  height: 160px;
+}
+.leave-message .container .btn-yellow {
+  margin: 30px 0;
+  cursor: pointer;
+}
+
 .footer-info {
   background-color: #0E1021;
   color: #DAD9D3;
