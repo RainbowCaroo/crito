@@ -24,6 +24,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 30px;
+  transition: background-color 0.2s ease-in-out;
 }
 .btn-yellow i {
   margin-left: 8px;
@@ -44,6 +45,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 30px;
+  transition: background-color 0.2s ease-in-out;
 }
 .btn-black i {
   margin-left: 8px;
@@ -64,6 +66,7 @@ html, body {
   font-weight: 600;
   font-size: 16px;
   border-radius: 30px;
+  transition: background-color 0.2s ease-in-out;
 }
 .btn-transparent i {
   margin-left: 8px;
@@ -492,9 +495,13 @@ header .container .mainmenu .btn-login {
   }
 }
 .company .container .about-company .links .btn-transparent {
-  padding: 14px;
+  padding: 14px 18px;
   margin-left: 30px;
   margin-right: 15px;
+}
+.company .container .about-company .links .btn-transparent i {
+  margin-left: 0px;
+  font-size: 0.9rem;
 }
 .company .container .about-company .links .link {
   color: #191919;
@@ -507,10 +514,16 @@ header .container .mainmenu .btn-login {
   z-index: 0;
 }
 .our-services .background-lines-right {
+  display: none;
   position: absolute;
   z-index: 1;
   right: 0;
   bottom: 0;
+}
+@media (min-width: 680px) {
+  .our-services .background-lines-right {
+    display: block;
+  }
 }
 .our-services .container {
   padding-bottom: 100px;
@@ -549,9 +562,13 @@ header .container .mainmenu .btn-login {
   position: absolute;
   right: 0;
   bottom: 20px;
-  padding: 14px;
+  padding: 14px 16px;
   margin-left: 30px;
   margin-right: 20px;
+}
+.our-services .container .services .icon-info .btn-black i {
+  margin-left: 0px;
+  font-size: 1.3rem;
 }
 .our-services .container .services .icon-info a {
   justify-items: end;
@@ -565,9 +582,13 @@ header .container .mainmenu .btn-login {
   bottom: 20px;
   background-color: #FFFFFF;
   border: none;
-  padding: 14px;
+  padding: 14px 16px;
   margin-left: 30px;
-  margin-right: 15px;
+  margin-right: 20px;
+}
+.our-services .container .services .startup .btn-transparent i {
+  margin-left: 0px;
+  font-size: 1.3rem;
 }
 .our-services .container .services .startup .btn-transparent:hover {
   background-color: #191919;
@@ -698,6 +719,8 @@ header .container .mainmenu .btn-login {
 
 .team {
   background-color: #F9D783;
+}
+.team .container {
   padding: 40px;
 }
 .team .container .meet-our-team {
@@ -1007,15 +1030,22 @@ header .container .mainmenu .btn-login {
   margin: 30px 0;
 }
 
-.map .small-map {
-  justify-content: center;
-  align-self: center;
+@media (min-width: 980px) {
+  .map .small-map {
+    display: none;
+  }
 }
 .map .big-map {
   display: none;
 }
+@media (min-width: 980px) {
+  .map .big-map {
+    display: block;
+  }
+}
 .map img {
-  width: auto;
+  width: 100%;
+  height: auto;
 }
 
 .footer-info {
@@ -1099,5 +1129,5 @@ footer .container .socialmedia-bar a {
   padding-left: 20px;
 }
 footer .container .socialmedia-bar a:hover {
-  color: #868686;
+  color: #F9D783;
 }
